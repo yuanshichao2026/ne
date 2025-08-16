@@ -1,0 +1,212 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #1a1a2e, #16213e);
+}
+
+.game-header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4ecca3;
+    text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+    letter-spacing: 2px;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+canvas {
+    border: 3px solid #4ecca3;
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.3);
+    border-radius: 5px;
+}
+
+.game-container {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.game-area {
+    position: relative;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 220px;
+}
+
+.instructions-panel {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next-piece, .score-board, .controls, .instructions {
+    background-color: #232741;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #4ecca3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.next-piece:hover, .score-board:hover, .controls:hover, .instructions:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.score-board .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #e2e2e2;
+}
+
+.stat-value {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4ecca3;
+    text-shadow: 0 0 5px rgba(78, 204, 163, 0.5);
+}
+
+.controls button {
+    background-color: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button i {
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background-color: #4ecca3 !important;
+}
+
+.btn-secondary {
+    background-color: #eeeeee !important;
+}
+
+.btn-danger {
+    background-color: #ff6b6b !important;
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:active {
+    transform: scale(0.98);
+}
+
+.instructions h3, .next-piece h3, .score-board h3 {
+    color: #4ecca3;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #4ecca3;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+h3 i {
+    margin-right: 8px;
+}
+
+.key-instruction {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ecca3;
+    color: #1a1a2e;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    min-width: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.game-footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: #eeeeee;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .instructions-panel, .game-info {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .game-area {
+        order: 1;
+    }
+    
+    .instructions-panel {
+        order: 3;
+    }
+    
+    .game-info {
+        order: 2;
+    }
+}
