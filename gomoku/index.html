@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomoku</title>
+    <title>五子棋</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Gomoku</h1>
-    <div id="board"></div>
-    <button id="reset">Reset</button>
+    <div id="game-container">
+        <header>
+            <h1>五子棋</h1>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="mode">模式:</label>
+                    <select id="mode">
+                        <option value="pve">人机对战</option>
+                        <option value="pvp">双人对战</option>
+                    </select>
+                </div>
+                <div id="aiBlackWrap" class="control-group">
+                    <input type="checkbox" id="aiBlack">
+                    <label for="aiBlack">AI执黑</label>
+                </div>
+                <button id="restart">重新开始</button>
+            </div>
+        </header>
+        
+        <div id="board-container">
+            <canvas id="board"></canvas>
+        </div>
+        
+        <footer>
+            <p id="status">当前回合：黑 (玩家)</p>
+        </footer>
+    </div>
+
+    <!-- 获胜弹窗 -->
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <h2 id="winTitle">黑方胜！</h2>
+            <button id="modalRestart">再来一局</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
