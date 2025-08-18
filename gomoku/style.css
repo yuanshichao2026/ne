@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    background-color: #deb887;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8b4513;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.piece {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
