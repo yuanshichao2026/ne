@@ -1,0 +1,17 @@
+[
+    {
+        "title": "初级英语语法",
+        "description": "系统学习英语基础语法，为更高阶的语言学习打下坚实基础。",
+        "image": "https://via.placeholder.com/300x200.png?text=English+Grammar"
+    },
+    {
+        "title": "SAT/ACT 备考冲刺",
+        "description": "针对性强化考试技巧，名师指导，助你冲刺高分，进入理想大学。",
+        "image": "https://via.placeholder.com/300x200.png?text=SAT/ACT+Prep"
+    },
+    {
+        "title": "少儿编程入门",
+        "description": "通过有趣的项目和游戏，培养孩子的逻辑思维和创新能力。",
+        "image": "https://via.placeholder.com/300x200.png?text=Kids+Coding"
+    }
+]

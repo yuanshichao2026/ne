@@ -1,0 +1,22 @@
+[
+    {
+        "name": "王教授",
+        "title": "首席教育顾问",
+        "image": "https://via.placeholder.com/150x150.png?text=Prof.+Wang"
+    },
+    {
+        "name": "李老师",
+        "title": "SAT/ACT 专家",
+        "image": "https://via.placeholder.com/150x150.png?text=Teacher+Li"
+    },
+    {
+        "name": "张老师",
+        "title": "英语教学主任",
+        "image": "https://via.placeholder.com/150x150.png?text=Teacher+Zhang"
+    },
+    {
+        "name": "赵老师",
+        "title": "编程讲师",
+        "image": "https://via.placeholder.com/150x150.png?text=Teacher+Zhao"
+    }
+]
